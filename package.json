@@ -6,7 +6,7 @@
     "build": "babel src --out-dir lib",
     "lint": "standard \"src/**/*.js\"",
     "test": "mocha \"src/**/*.test.js\" --require @babel/register",
-    "test-coverage": "nyc yarn test",
+    "test:coverage": "nyc --reporter lcovonly --reporter text yarn test",
     "prepare": "yarn build"
   },
   "repository": "git+https://github.com/tleef/context-js.git",
