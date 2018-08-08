@@ -1,12 +1,13 @@
 {
   "name": "@tleef/context-js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/context.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "lint": "standard \"src/**/*.js\"",
     "test": "mocha \"src/**/*.test.js\" --require @babel/register",
-    "test-coverage": "nyc yarn test"
+    "test-coverage": "nyc yarn test",
+    "prepare": "yarn build"
   },
   "repository": "git+https://github.com/tleef/context-js.git",
   "author": "Tom Lee",

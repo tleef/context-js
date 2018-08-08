@@ -101,7 +101,7 @@ describe('Context', () => {
     })
 
     it('should throw if instantiated without new', () => {
-      expect(() => Context()).to.throw('Class constructor Context cannot be invoked without \'new\'')
+      expect(() => Context()).to.throw('Cannot call a class as a function')
     })
 
     it('should throw if parent is not a Context', () => {
