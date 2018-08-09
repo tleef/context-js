@@ -1,4 +1,4 @@
-# context-js &middot; 
+# context-js
 
 ![npm (scoped)](https://img.shields.io/npm/v/@tleef/context-js.svg)
 ![Travis (.org)](https://img.shields.io/travis/tleef/context-js.svg)
