@@ -1,8 +1,6 @@
 language: node_js
 node_js:
 - "6.10"
-before_script:
-- npm install -g codecov
 script:
 - yarn test:coverage
-- codecov
+- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
