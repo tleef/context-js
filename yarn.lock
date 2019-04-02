@@ -111,10 +111,6 @@
   dependencies:
     buffer "^5.2.1"
 
-"@tleef/type-js@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@tleef/type-js/-/type-js-1.4.2.tgz#ade712c7992998367f774a49045f8d0cdc6f2d14"
-
 "@tleef/unique-js@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@tleef/unique-js/-/unique-js-1.4.0.tgz#2b558996b553ef647570c99964967f3534f12463"
