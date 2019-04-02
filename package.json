@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "main": "lib/context.js",
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "lint": "standard \"src/**/*.js\"",
-    "test": "mocha \"src/**/*.test.js\" --require @babel/register",
-    "test:coverage": "nyc --reporter lcovonly --reporter text yarn test",
+    "build": "tsc",
+    "lint": "tslint --fix --project .",
+    "test": "mocha \"src/**/*.test.ts\" --require ts-node/register --require source-map-support/register",
+    "test:coverage": "nyc --extension .ts --exclude \"src/**/*.test.ts\" --reporter lcovonly --reporter text yarn test",
     "prepare": "yarn build"
   },
   "repository": "git+https://github.com/tleef/context-js.git",
@@ -17,22 +17,22 @@
   },
   "homepage": "https://github.com/tleef/context-js#readme",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.56",
-    "@babel/core": "^7.0.0-beta.56",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.56",
-    "@babel/preset-env": "^7.0.0-beta.56",
-    "@babel/register": "^7.0.0-beta.56",
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.2",
-    "mocha": "^5.2.0",
-    "nyc": "^12.0.2",
-    "sinon": "^6.1.4",
-    "sinon-chai": "^3.2.0",
-    "standard": "^11.0.1"
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.0",
+    "@types/sinon": "^7.0.11",
+    "@types/sinon-chai": "^3.2.2",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "sinon": "^7.3.1",
+    "sinon-chai": "^3.3.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.56",
-    "@tleef/type-js": "^1.2.0",
-    "@tleef/unique-js": "^1.0.1"
+    "@tleef/unique-js": "^1.4.0"
   }
 }
