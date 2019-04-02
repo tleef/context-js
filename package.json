@@ -18,8 +18,8 @@
   "homepage": "https://github.com/tleef/context-js#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
+    "@types/events": "^3.0.0",
     "@types/mocha": "^5.2.6",
-    "@types/node": "^11.13.0",
     "@types/sinon": "^7.0.11",
     "@types/sinon-chai": "^3.2.2",
     "chai": "^4.2.0",
@@ -33,6 +33,7 @@
     "typescript": "^3.4.1"
   },
   "dependencies": {
-    "@tleef/unique-js": "^1.4.0"
+    "@tleef/unique-js": "^1.4.0",
+    "events": "^3.0.0"
   }
 }
